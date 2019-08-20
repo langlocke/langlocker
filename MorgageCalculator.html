@@ -1,0 +1,29 @@
+<!Doctype html>
+<html>
+<head> <title>Calculator</title> 
+<script language="javascript" src="Program.js" type="text/javascript"></script>
+<link rel="stylesheet" href="stylesheet.css">
+</head> 
+<body>
+
+<body>
+<h1>Mortgage Calculator</h1> 
+<div class="simp-div">
+<form name='mortgagecalc' method='POST'>
+<p>Loan Amount:<br/>
+<input type='text'  name='loan' size=10> <span class="simp-error" id="loanError"></span></p>
+<p>Loan Length(inYears):<br/>
+<input type='text'  name='years' size=5> <span class="simp-error" id="yearsError"></span></p>
+<p>Interest Rate:*<br/>
+<input type='text'  name='rate' size=5> <span class="simp-error" id="rateError"></span></p>
+<input type='button' onClick="return myPayment()" value='Calculate'>  <input type='button' onClick="return myPaymentReset()" value='Reset'>
+</form>
+<small>Enter numbers and decimal points. No specal characters are allowed.</small>
+<p class="simp-monthlypayment" id="monthlyPayment"> </p>
+<p class="simp-friendlyreminder" id="friendlyReminder">This is your princpal amount + Interest payment or in other words, your repayment to the bank for each month.
+But remember, you will also have to account the budget for home insurance, real estate taxes. if you are unable to afford a 20% down payment, 
+Private Mortgage Insurance (PMI). These additional costs could increase monthly by 50% or sometimes more.</p>
+</div>
+
+</body> 
+</html>
